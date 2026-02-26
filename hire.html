@@ -1,77 +1,34 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <title>Hire me</title>
-  </head>
-  <style>
-  body{
-    background: black;
-  }
-    
-    div{
-      background: brown;
-      height: 500px;
-      width: 350px;
-      margin-top: 140px;
-      margin-left: 20px;
-      border-radius: 30px;
-    }
-    
-    input{
-      height: 30px;
-      width: 310px;
-      margin-top: 5px;
-      margin-left: 15px;
-      margin-bottom: 30px;
-    }
-
-   h1{
-     margin-left: 110px;
-     margin-bottom: -20px;
-     margin-top: 20px;
-     color: white;
-   }
-    button{
-      border-radius: 10px;
-      color: skyblue;
-      margin-left: 40px;
-      font-size: 20px;
-      background: blue;
-      padding: 15px 80px;
-    }
-    
-    label{
-      margin-left: 10px;
-      color:white;
-      font-size: 20px;
-    }
-    
-    textarea{
-      height: 100px;
-      width: 310px;
-      margin-left: 15px;
-      margin-top: 7px;
-    }
-    
-    .msg{
-      margin-bottom: 300px;
-    }
-  
-  </style>
-  <body>
-  <div> 
-  <form><br>
-    <h1> Contact Me</h1> <br><br>
-    <label>Name:</label>
-    <input type="text">
-    <label class="mail">Email:</label>
-    <input type="mail">
-    <label class="msg">Messages:</label><br>
-    <textarea name="Message"></textarea>
-    <br><br>
-    <button>Send Message</button>
-    </form>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me - Ankit Singh</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Trebuchet MS', sans-serif; }
+        body { background-color: #000; color: #fff; min-height: 100vh; padding: 20px; }
+        .contact-container { max-width: 400px; margin: 50px auto; background: #111; padding: 30px; border-radius: 20px; border: 2px solid #8b1a1a; }
+        h1 { color: #8b1a1a; text-align: center; margin-bottom: 20px; }
+        label { display: block; margin-bottom: 5px; color: #ccc; }
+        input, textarea { width: 100%; padding: 10px; margin-bottom: 20px; background: #222; border: 1px solid #8b1a1a; color: #fff; border-radius: 5px; }
+        button { width: 100%; padding: 12px; background: #8b1a1a; border: none; color: #fff; font-size: 18px; border-radius: 50px; cursor: pointer; transition: 0.3s; }
+        button:hover { background: #fff; color: #8b1a1a; }
+        .back-home { display: block; text-align: center; margin-top: 15px; color: #8b1a1a; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Hire Me</h1>
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Your Name" required>
+            <label>Email</label>
+            <input type="email" placeholder="Your Email" required>
+            <label>Message</label>
+            <textarea rows="5" placeholder="How can I help you?"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <a href="index.html" class="back-home">Go Back Home</a>
     </div>
-  
-  </body>
+</body>
 </html>
